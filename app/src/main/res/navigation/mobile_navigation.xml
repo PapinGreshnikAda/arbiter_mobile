@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_point">
+
+    <fragment
+        android:id="@+id/navigation_point"
+        android:name="com.example.arbiter.ui.point.PointFragment"
+        android:label="@string/title_point"
+        tools:layout="@layout/fragment_point" />
+
+    <fragment
+        android:id="@+id/navigation_money"
+        android:name="com.example.arbiter.ui.money.MoneyFragment"
+        android:label="@string/title_money"
+        tools:layout="@layout/fragment_money" />
+
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="com.example.arbiter.ui.about.AboutFragment"
+        android:label="@string/title_about"
+        tools:layout="@layout/fragment_about" />
+</navigation>

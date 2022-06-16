@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">arbiter</string>
+    <string name="title_point">Шар предсказаний</string>
+    <string name="title_money">Монетка</string>
+    <string name="title_about">О нас</string>
+
+    <string name="version">Версия 0.0.1</string>
+
+    <string name="team">Группа 3-ТИД-2:\n\nТитаренко Максим\nДиденко Мария\nСвинцова Мария</string>
+</resources>
