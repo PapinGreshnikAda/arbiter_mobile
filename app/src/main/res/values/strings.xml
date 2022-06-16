@@ -7,4 +7,5 @@
     <string name="version">Версия 0.0.1</string>
 
     <string name="team">Группа 3-ТИД-2:\n\nТитаренко Максим\nДиденко Мария\nСвинцова Мария</string>
+    <string name="point_label">Point</string>
 </resources>
