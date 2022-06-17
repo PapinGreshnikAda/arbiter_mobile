@@ -34,4 +34,8 @@ class PointViewModel : ViewModel() {
         val randomIndex = Random.nextInt(answers.size)
         _state.value = End(answers[randomIndex])
     }
+
+    fun end() {
+        _state.value = Initial
+    }
 }

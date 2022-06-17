@@ -30,7 +30,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:contentDescription="@string/point_label"
+        android:contentDescription="@string/image_label"
         android:src="@drawable/ic_point_image"/>
 
     <ImageView
@@ -41,7 +41,7 @@
         app:layout_constraintStart_toStartOf="@id/point_image"
         app:layout_constraintEnd_toEndOf="@id/point_image"
         android:layout_marginTop="70dp"
-        android:contentDescription="@string/point_label"
+        android:contentDescription="@string/image_label"
         android:src="@drawable/ic_point_center"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

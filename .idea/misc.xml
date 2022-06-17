@@ -5,23 +5,31 @@
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.167" />
         <entry key="app/src/main/res/drawable/bnv_tab_item_foreground.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_about_icon.xml" value="0.1035" />
         <entry key="app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.167" />
         <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.167" />
         <entry key="app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.167" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.167" />
+        <entry key="app/src/main/res/drawable/ic_money_1.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/ic_money_2.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/ic_money_3.xml" value="0.1035" />
         <entry key="app/src/main/res/drawable/ic_money_icon.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_money_orel.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/ic_money_rub.xml" value="0.1035" />
         <entry key="app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.167" />
         <entry key="app/src/main/res/drawable/ic_point_center.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_point_icon.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_point_image.xml" value="0.167" />
         <entry key="app/src/main/res/drawable/main_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/money_animation.xml" value="0.1035" />
         <entry key="app/src/main/res/drawable/rounded.xml" value="0.167" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_about.xml" value="0.24364318847656252" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_money.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.3098958333333333" />
-        <entry key="app/src/main/res/layout/fragment_point.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_point.xml" value="0.1" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
       </map>
     </option>

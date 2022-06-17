@@ -13,27 +13,26 @@ import com.example.arbiter.databinding.FragmentPointBinding
 
 
 class PointFragment : Fragment() {
-
     private var _binding: FragmentPointBinding? = null
-    private var _pointViewModel: PointViewModel? = null
+    private var _viewModel: PointViewModel? = null
     private val binding get() = _binding!!
-    private val pointViewModel get() = _pointViewModel!!
+    private val viewModel get() = _viewModel!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _pointViewModel =
+        _viewModel =
             ViewModelProvider(this).get(PointViewModel::class.java)
         _binding = FragmentPointBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        binding.body.setOnClickListener { pointViewModel.onTap() }
+        binding.body.setOnClickListener { viewModel.onTap() }
 
-        pointViewModel.state.observe(viewLifecycleOwner) {
+        viewModel.state.observe(viewLifecycleOwner) {
             when (it) {
-                Initial -> initial(it as Initial)
+                is Initial -> initial(it)
                 Middle -> animationMiddle()
                 Start -> animationStart()
                 is End -> showAnswer(it)
@@ -57,7 +56,7 @@ class PointFragment : Fragment() {
             override fun onAnimationStart(arg0: Animation) {}
             override fun onAnimationRepeat(arg0: Animation) {}
             override fun onAnimationEnd(arg0: Animation) {
-                pointViewModel.onShakeEnd()
+                viewModel.onShakeEnd()
             }
         })
 
@@ -71,7 +70,7 @@ class PointFragment : Fragment() {
             override fun onAnimationStart(arg0: Animation) {}
             override fun onAnimationRepeat(arg0: Animation) {}
             override fun onAnimationEnd(arg0: Animation) {
-                pointViewModel.onAnimationEnd()
+                viewModel.onAnimationEnd()
             }
         })
 
@@ -80,6 +79,11 @@ class PointFragment : Fragment() {
 
     private fun showAnswer(state: End) {
         binding.answerText.text = state.text
+    }
+
+    override fun onPause() {
+        super.onPause()
+        viewModel.end()
     }
 
     override fun onDestroyView() {
